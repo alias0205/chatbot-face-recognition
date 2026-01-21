@@ -1,0 +1,179 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #1f2a44;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+}
+
+.app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+}
+
+.app__header h1 {
+  margin: 0 0 8px;
+}
+
+.app__header p {
+  margin: 0;
+  color: #5a6478;
+}
+
+.app__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #1f8f5f;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #1f8f5f;
+  border-radius: 999px;
+}
+
+.app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 360px;
+}
+
+.card__header h2 {
+  margin: 0 0 6px;
+}
+
+.card__header p {
+  margin: 0;
+  color: #5a6478;
+}
+
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.chatbot__messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatbot__message {
+  max-width: 85%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.chatbot__message--assistant {
+  background: #eef2ff;
+  align-self: flex-start;
+}
+
+.chatbot__message--user {
+  background: #1f2a44;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.chatbot__form {
+  display: flex;
+  gap: 12px;
+}
+
+.chatbot__form input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dde2ee;
+}
+
+.chatbot__form button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #1f2a44;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.face__upload {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed #c6cad6;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.face__upload input {
+  display: none;
+}
+
+.face button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #335dff;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.face__results {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 120px;
+}
+
+.error {
+  color: #b42318;
+  font-weight: 600;
+}
